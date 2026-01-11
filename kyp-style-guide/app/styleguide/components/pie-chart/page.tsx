@@ -1,6 +1,6 @@
 "use client"
 
-import { Pie, PieChart, Cell, Label, Sector } from "recharts"
+import { Pie, PieChart, Cell, Label } from "recharts"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import {
@@ -99,9 +99,7 @@ export default function PieChartShowcasePage() {
         return statusData.reduce((acc, curr) => acc + curr.value, 0)
     }, [])
 
-    const totalVagas = React.useMemo(() => {
-        return departmentData.reduce((acc, curr) => acc + curr.value, 0)
-    }, [])
+
 
     return (
         <div className="p-8 lg:p-12 space-y-12 max-w-6xl">

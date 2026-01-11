@@ -15,7 +15,7 @@ export const navigation: NavSection[] = [
         items: [
             {
                 name: "Design Tokens",
-                href: "/",
+                href: "/styleguide",
                 description: "Cores, tipografia, espaçamento e todos os tokens do sistema"
             },
         ]

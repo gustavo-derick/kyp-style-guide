@@ -13,7 +13,7 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Check, X, MoreHorizontal, ArrowUpDown, ChevronDown } from "lucide-react"
+import { Check, X, MoreHorizontal } from "lucide-react"
 
 // Dados de exemplo para as tabelas
 const invoices = [
@@ -160,8 +160,8 @@ export default function TableShowcasePage() {
                                         <TableCell>{getStatusBadge(candidate.status)}</TableCell>
                                         <TableCell className="text-center">
                                             <span className={`font-mono font-bold ${candidate.score >= 80 ? 'text-success' :
-                                                    candidate.score >= 60 ? 'text-warning' :
-                                                        'text-destructive'
+                                                candidate.score >= 60 ? 'text-warning' :
+                                                    'text-destructive'
                                                 }`}>
                                                 {candidate.score}%
                                             </span>

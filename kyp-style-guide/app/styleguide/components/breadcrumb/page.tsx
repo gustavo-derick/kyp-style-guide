@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Slash, ChevronRight, Home } from "lucide-react"
+import { Slash, Home } from "lucide-react"
 
 // === COMPONENTES AUXILIARES ===
 

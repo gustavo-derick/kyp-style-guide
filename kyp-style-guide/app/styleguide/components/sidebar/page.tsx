@@ -97,6 +97,31 @@ function AppSidebarDemo() {
                                     <ChevronsUpDown className="ml-auto" />
                                 </SidebarMenuButton>
                             </DropdownMenuTrigger>
+                            <DropdownMenuContent className="w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg" align="start" side="bottom" sideOffset={4}>
+                                <DropdownMenuLabel className="p-0 font-normal">
+                                    <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
+                                        <Avatar className="h-8 w-8 rounded-lg">
+                                            <AvatarImage src="" alt="Acme Inc" />
+                                            <AvatarFallback className="rounded-lg">AI</AvatarFallback>
+                                        </Avatar>
+                                        <div className="grid flex-1 text-left text-sm leading-tight">
+                                            <span className="truncate font-semibold">Acme Inc</span>
+                                            <span className="truncate text-xs">Enterprise</span>
+                                        </div>
+                                    </div>
+                                </DropdownMenuLabel>
+                                <DropdownMenuSeparator />
+                                <DropdownMenuGroup>
+                                    <DropdownMenuItem>
+                                        <Settings className="mr-2 h-4 w-4" />
+                                        Settings
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem>
+                                        <Plus className="mr-2 h-4 w-4" />
+                                        Add Team
+                                    </DropdownMenuItem>
+                                </DropdownMenuGroup>
+                            </DropdownMenuContent>
                         </DropdownMenu>
                     </SidebarMenuItem>
                 </SidebarMenu>
