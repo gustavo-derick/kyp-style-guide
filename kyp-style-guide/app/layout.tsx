@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Roboto } from "next/font/google";
 import "./globals.css";
+import AppShell from "@/components/layout/app-shell";
 
 // Fonte para headings - Space Grotesk (alternativa moderna ao Astro)
 const spaceGrotesk = Space_Grotesk({
@@ -34,7 +35,9 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${roboto.variable} antialiased`}
       >
-        {children}
+        <AppShell>
+          {children}
+        </AppShell>
       </body>
     </html>
   );

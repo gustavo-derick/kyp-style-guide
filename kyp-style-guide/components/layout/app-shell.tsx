@@ -3,15 +3,18 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { navigation } from "./navigation"
+// Import from new location
+import { navigation } from "@/lib/navigation"
 import { useState } from "react"
 
-export default function StyleguideLayout({
+export default function AppShell({
     children,
 }: {
     children: React.ReactNode
 }) {
     const pathname = usePathname()
+    // Default to dark mode is often safer if user wants that "premium" feel mentioned in guidelines, 
+    // but the original code had it false. I'll stick to false to match original behavior unless told otherwise.
     const [isDarkMode, setIsDarkMode] = useState(false)
 
     const toggleDarkMode = () => {
@@ -25,7 +28,8 @@ export default function StyleguideLayout({
             <aside className="w-72 border-r border-border bg-card p-6 flex flex-col gap-6 fixed top-0 left-0 h-screen overflow-y-auto z-50">
                 {/* Logo/Título */}
                 <div className="flex flex-col gap-2">
-                    <Link href="/styleguide" className="flex items-center gap-3 group">
+                    {/* Updated href to root */}
+                    <Link href="/" className="flex items-center gap-3 group">
                         <div
                             className="w-10 h-10 rounded-xl flex items-center justify-center shadow-md transition-shadow group-hover:shadow-glow"
                             style={{ background: 'linear-gradient(135deg, var(--primary), var(--detail), var(--accent))' }}
