@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Roboto } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import AppShell from "@/components/layout/app-shell";
 
-// Fonte para headings - Space Grotesk (alternativa moderna ao Astro)
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+// Fonte para headings - Inter
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body
-        className={`${spaceGrotesk.variable} ${roboto.variable} antialiased`}
+        className={`${inter.variable} ${roboto.variable} antialiased`}
       >
         <AppShell>
           {children}

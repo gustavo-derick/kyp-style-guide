@@ -325,13 +325,13 @@ export default function Home() {
       {/* ===== TIPOGRAFIA ===== */}
       <Section
         title="Tipografia"
-        description="Space Grotesk para headings, Roboto para corpo"
+        description="Inter para headings, Roboto para corpo"
       >
         <Card>
           <CardContent className="p-8 space-y-8">
             {/* Headings */}
             <div className="space-y-4">
-              <p className="text-xs uppercase tracking-wider text-muted-foreground font-semibold">Headings (Space Grotesk)</p>
+              <p className="text-xs uppercase tracking-wider text-muted-foreground font-semibold">Headings (Inter)</p>
               <div className="space-y-3">
                 <h1 className="text-5xl font-heading font-bold">Heading 1 - 48px Bold</h1>
                 <h2 className="text-4xl font-heading font-bold">Heading 2 - 36px Bold</h2>
